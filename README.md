@@ -1,4 +1,4 @@
-﻿# VEVOR EH-720TS (E-cut / "Cutter TT-720") — how to drive it without SignMaster
+# VEVOR EH-720TS (E-cut / "Cutter TT-720") — how to drive it without SignMaster
 
 Practical notes from reverse-engineering a VEVOR EH-720TS desktop cutting/creasing plotter (with ARMS camera)
 on Windows, October 2026. Written so other users (and AI assistants) can find the path quickly.
@@ -80,7 +80,9 @@ no subscription, no dongle. Main features, all working on the real EH-720TS:
   then "test marks", "crease only", "cut only" or "crease + cut" around the print.
 - **Box tools**: detects the cut contour of a box artwork, deduces folds from the shape, optional **AI**
   (local Claude) to pick the real crease lines, click-by-click drawing of cut and crease lines with snapping,
-  crease-head offset calibration. Parametric **box generator** in progress.
+  crease-head offset calibration.
+- **Box generator**: choose a model (mailer box without glue, straight tuck box), type the measurements and get an
+  exact die-line (cut + crease) with a live 3D preview (open/closed).
 - Interactive preview (drag, resize, ruler, undo/redo, live path animation), A4/A3/custom sheet in portrait or
   landscape, paper-loss warning, test-area trace, eject, job library ("collection") with folders, autosave.
 - 150 automated tests.
